@@ -18,6 +18,10 @@ h1 {
     animation: fadeIn 1s ease-in-out;
 }
 
+.dark-mode h1 {
+    color: #f0f0f0; /* Ensure header text is visible in dark mode */
+}
+
 .controls {
     display: flex;
     align-items: center;
