@@ -159,3 +159,23 @@ input[type="number"]:focus {
     to { opacity: 1; transform: translateY(0); }
 }
 
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 2em; /* Adjust font size for smaller screens */
+    }
+
+    .controls {
+        flex-direction: column; /* Stack controls vertically */
+        align-items: center;
+    }
+
+    .canvas-controls {
+        flex-direction: column; /* Stack canvas controls vertically */
+        align-items: center;
+    }
+
+    canvas {
+        max-width: 100%; /* Ensure canvas is responsive */
+    }
+}
+
