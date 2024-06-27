@@ -68,14 +68,12 @@ document.addEventListener("DOMContentLoaded", function () {
     canvas.addEventListener('mousemove', draw);
     canvas.addEventListener('mouseleave', stopDrawing);
 
-    // bgColorPicker.addEventListener('input', function () {
-    //     ctx.save();
-    //     ctx.globalCompositeOperation = 'destination-over';
-    //     ctx.fillStyle = bgColorPicker.value;
-    //     ctx.fillRect(0, 0, canvas.width, canvas.height);
-    //     ctx.restore();
-    //     saveState();
-    // });
+    // - For mobile web browser
+    canvas.addEventListener('touchstart', startDrawing);
+    canvas.addEventListener('touchend', stopDrawing);
+    canvas.addEventListener('touchmove', draw);
+    canvas.addEventListener('touchcancel', stopDrawing);
+    
     bgColorPicker.addEventListener('input', function () {
         ctx.fillStyle = bgColorPicker.value;
         ctx.fillRect(0, 0, canvas.width, canvas.height);
