@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Signature</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Digital Signature</h1>
+    <div class="controls">
+        <label for="bgColor">Background Color:</label>
+        <input type="color" id="bgColor" name="bgColor" value="#ffffff">
+        <label for="penColor">Pen Color:</label>
+        <input type="color" id="penColor" name="penColor" value="#000000">
+        <label for="penWidth">Pen Width:</label>
+        <input type="range" id="penWidth" name="penWidth" min="1" max="10" value="2">
+        <button id="toggleThemeButton">Toggle Dark Mode</button>
+    </div>
+    <div class="canvas-controls">
+        <label for="canvasWidth">Canvas Width:</label>
+        <input type="number" id="canvasWidth" name="canvasWidth" value="500" min="100">
+        <label for="canvasHeight">Canvas Height:</label>
+        <input type="number" id="canvasHeight" name="canvasHeight" value="300" min="100">
+        <button id="resizeCanvasButton">Resize Canvas</button>
+    </div>
+    <canvas id="signatureCanvas" width="500" height="300"></canvas>
+    <div class="controls">
+        <button id="clearButton">Clear</button>
+        <button id="undoButton">Undo</button>
+        <button id="downloadPNG">Download PNG</button>
+        <button id="downloadJPEG">Download JPEG</button>
+        <button id="downloadSVG">Download SVG</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
